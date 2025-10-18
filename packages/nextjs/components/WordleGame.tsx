@@ -10,9 +10,8 @@ import DailyPuzzleNFTABI from '../contracts/DailyPuzzleNFT.json';
 import { useAccount, useChainId } from 'wagmi';
 
 // Contract address and ABI
-const CONTRACT_ADDRESS =
-  process.env.NEXT_PUBLIC_CONTRACT_ADDRESS || '0x24649cE96a63d1EDE9a7E458de04Aa92A744cb97';
-const NFT_ADDRESS = process.env.NEXT_PUBLIC_NFT_ADDRESS || '';
+const CONTRACT_ADDRESS = (process.env.NEXT_PUBLIC_CONTRACT_ADDRESS || '0x24649cE96a63d1EDE9a7E458de04Aa92A744cb97').trim();
+const NFT_ADDRESS = (process.env.NEXT_PUBLIC_NFT_ADDRESS || '').trim();
 const CONTRACT_ABI = FHEWordleABI as any;
 const NFT_ABI = DailyPuzzleNFTABI as any;
 
@@ -795,9 +794,9 @@ const WordleGame = () => {
         </p>
 
         <div className="text-sm mb-4">
-          <p>Account: {address || '-'}</p>
+          <p>Account: <span className="break-all">{address || '-'}</span></p>
           <p>Guesses: {gameState.guessCount}/6</p>
-          <p>Contract: {CONTRACT_ADDRESS}</p>
+          <p>Contract: <span className="break-all">{CONTRACT_ADDRESS}</span></p>
         </div>
 
         <div className="mb-4">
