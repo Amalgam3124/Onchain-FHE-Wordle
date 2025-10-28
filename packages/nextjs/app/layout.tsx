@@ -2,7 +2,7 @@ import './globals.css';
 import Providers from './providers';
 
 export const metadata = {
-  title: 'Zama FHE Wordle',
+  title: 'Onchain FHE Wordle',
   description: 'Privacy-preserving Wordle built on Zama FHEVM',
 };
 export const viewport = {
