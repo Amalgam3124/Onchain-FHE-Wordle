@@ -788,7 +788,7 @@ const WordleGame = () => {
   return (
     <div className="wordle-root min-h-screen text-white">
       <div className="wordle-card">
-        <h1 className="text-4xl font-bold mb-4">Zama FHE Wordle</h1>
+        <h1 className="text-4xl font-bold mb-4">Onchain FHE Wordle</h1>
         <p className="wordle-text-muted mb-6">
           Based on Zama FHEVM privacy protection Wordle game. Your guesses are encrypted to ensure gameplay privacy.
         </p>
@@ -859,7 +859,7 @@ const WordleGame = () => {
         {(gameState.initialized || onChainInitialized) && renderKeyboard()}
 
         <div className="wordle-text-muted text-sm mt-6">
-          <p>This is a demo of Zama FHE Wordle</p>
+          <p>This is a demo of Onchain FHE Wordle</p>
           <p>Green = correct position, Yellow = wrong position, Gray = not in the word</p>
         </div>
       </div>
