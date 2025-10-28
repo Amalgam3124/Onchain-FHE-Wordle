@@ -23,7 +23,7 @@ export default function Page() {
   return (
     <main className="flex min-h-screen flex-col items-center p-8 gap-6">
       <header className="w-full max-w-3xl flex items-center justify-between">
-        <h1 className="text-2xl font-semibold">Zama FHE Wordle</h1>
+        <h1 className="text-2xl font-semibold">Onchain FHE Wordle</h1>
         <ConnectButton />
       </header>
       <section className="w-full max-w-3xl">
