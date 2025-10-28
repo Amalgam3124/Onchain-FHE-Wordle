@@ -1,8 +1,8 @@
-# Zama Wordle
+# Onchain FHE Wordle
 
 A Web3 Wordle example project that includes smart contracts (Hardhat) and a frontend (Next.js). It integrates Zama FHE for privacy-preserving word guessing and also provides an ERC1155 NFT (DailyPuzzleSolvedNFT) to prove solving the daily puzzle.
 
-> Try live demo: https://zama-fhe-wordle.vercel.app/
+> Try live demo: https://onchain-fhe-wordle.vercel.app/
 
 ## Directory Structure
 
